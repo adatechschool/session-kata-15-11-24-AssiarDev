@@ -34,22 +34,24 @@ const getLatinCharacterList = (text) => {
 
 // Retourner la correspondance d'un caractère en morse
 const translateLatinCharacter = (character) => {
-
-    for (const [key, value] of Object.entries(latinToMorse)){
-        if (character === key){
-            return value
+    const split = getLatinCharacterList(character.toUpperCase());
+    for (const element of split){
+        for (const [key, value] of Object.entries(latinToMorse)){
+            if (element === key){
+                console.log(`${element} : ${value}`)
+            }
         }
-    }
-
+    }    
 }
-
-//console.log(translateLatinCharacter("R"));
 
 // Créer la fonction qui va utiliser les deux fonction précédente
-const encode = (word) => {
-    const split = getLatinCharacterList(word.toUpperCase());
 
+const encode = (word) => {
+    if ( typeof word === 'string'){
+        translateLatinCharacter(word)
+    }
 }
-console.log(encode('Raissa'))
+encode('Raissa')
+
 
 
