@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geist Mono';
+}
+
+body {
+    background-color: #b1cece;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #59b4d3;
+    height: 300px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    margin: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #b1cece;
+    font-weight: bold;
+}
+
+.translate-container {
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
